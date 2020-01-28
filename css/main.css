@@ -1,43 +1,144 @@
 body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  color: #222;
+  max-width: 40rem;
+  padding: 2rem;
+  margin: auto;
+  background: #f6f6f6; }
+
+img {
+  max-width: 100%; }
+
 a {
-    text-decoration: none;
-    color: #999;
+  color: #0074D9; }
+
+strong {
+  font-weight: 700;
 }
-a:hover {
-    text-decoration: underline;
-}
+
+h1, h2, strong {
+  color: #111; }
+
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+  font-size: 1.6em; }
+
+h2 {
+  font-size: 1.2em; }
+
+h3 {
+  font-size: 1.1em; }
+
+h4 {
+    font-size: 1em; }
+
+h1, h2, h3, h4, #title, .guide a {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.muted {
+  color: #aaa;
+  text-decoration: none; }
+
+.small {
+  font-size: .8em; }
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+
+  }
+
+nav li {
+    float: left;
+  }
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 0 20px 0 0;
+    text-decoration: none;
+  }
+
+#title a {
+      display: block;
+      float: left;
+      font-size: 1.4em;
+      text-decoration: none;
+      font-weight: bold;
+      color: #222;
 }
 
-ul.posts li {
-    list-style: none;
+@media screen and (max-width: 560px) {
+  #title a {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  nav ul {
+    margin-top: 1.5em;
+    float: left;
+  }
+}
+
+header {
+  display: block;
+  width: 100%;
+  float: left;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+main {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+hr {
+  border: 1px solid #eee;
+}
+
+.excerpt {
+  font-weight: 300i;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.guideblock {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0px;
+}
+
+.guide {
+  width: 300px;
+  height: 225px;
+  line-height: 225px;
+  background-size: cover;
+  text-align: center;
+  display: block;
+  float: left;
+  margin: 0px 10px 1em 10px;
+}
+
+.guide a {
+  font-size: 1.6em;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-weight: 700;
+  text-decoration: none;
 }
